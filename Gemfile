@@ -18,6 +18,10 @@ gem 'rolify'
 gem 'simple_form'
 gem 'unicorn'
 gem 'unicorn-rails'
+gem 'tilt'
+gem 'redcarpet'
+gem 'maruku'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
@@ -36,3 +40,7 @@ group :test do
   gem 'email_spec'
   gem 'launchy'
 end
+group :production do
+  gem 'rails_12factor'
+end
+

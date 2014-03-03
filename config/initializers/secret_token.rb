@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-BarbaryHorde::Application.config.secret_key_base = '4bf2aa01c5aa99ff293269e5d5a759ed4b04cf54948d4eb92429a4817bcf10c5954fb03793fb2ba99d08a620d22edad759bc3958f6442f5e800bd8cd257beeee'
+BarbaryHorde::Application.config.secret_key_base = ENV['SECRET_KEY_BASE'] 
